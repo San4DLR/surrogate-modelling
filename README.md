@@ -5,8 +5,8 @@ Short description of your project.
 ## Setup
 
 ```
-git clone https://github.com/YOUR_USERNAME/my-project.git
-cd my-project
+git clone https://github.com/San4DLR/surrogate-modelling.git
+cd surrogate-modelling
 uv sync
 ```
 
@@ -18,13 +18,8 @@ uv sync
 
 ## Install uv
 
-**macOS / Linux:**
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-``` 
 **Windows (Powershell):**
 ```
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-
 ```
 
