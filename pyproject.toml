@@ -25,6 +25,18 @@ packages = ["nnmodels"]
 [tool.uv]
 package = true
 
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+
 [dependency-groups]
 dev = [
     "hatchling>=1.29.0",
