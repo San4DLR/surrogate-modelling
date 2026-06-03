@@ -46,7 +46,7 @@ outs_test = outs_test.to(device)
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 
-epochs = 50000
+epochs = 2
 trainloss = []
 
 for epoch in range(epochs):
@@ -77,7 +77,7 @@ plt.tight_layout()
 plt.savefig("C:\\Users\\pisk_sa\\Code\\surrogate-modelling\\tests\\results\\cnn_duct\\001.svg")
 """
 plt.semilogy(trainloss); plt.grid()
-plt.savefig(ROOT_DIR / "tests/results/cnn_duct/linuxall.svg")
+plt.savefig(ROOT_DIR / "tests/results/cnn_duct/dummyloss.svg")
 
 testpred = model(inps_test) * p_std + p_mean
 testpred = testpred.cpu()
@@ -108,5 +108,5 @@ axes[3,5].imshow(testpred[1,0].detach().numpy())
 axes[3,5].set_title(f"Test set 1, Prediction")
 fig.suptitle("True values and predictions of Pressure in y-z-Plane", fontsize=24)
 fig.tight_layout()
-plt.savefig(ROOT_DIR / "tests/results/cnn_duct/linuxloss.svg")
+plt.savefig(ROOT_DIR / "tests/results/cnn_duct/dummyall.svg")
 
