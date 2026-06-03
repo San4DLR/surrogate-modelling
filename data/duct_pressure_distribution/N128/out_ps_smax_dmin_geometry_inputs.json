@@ -1,0 +1,55 @@
+{
+  "runDuctGen": 1,
+  "plotmode": 0,
+  "points_halfshape": 70,
+  "mode": 1,
+  "rel_deriv3_startstop_min": [
+    0,
+    1
+  ],
+  "extension_front": 0,
+  "extension_aft": 0.762,
+  "extension_ribs_front": 0,
+  "extension_ribs_aft": 5,
+  "rectangular_duct": {
+    "inlet_x": -0.853789,
+    "inlet_y": 0.0,
+    "inlet_z": 0.0,
+    "aip_x": 1.783,
+    "aip_y": -0.273628,
+    "aip_z": 0,
+    "aip_r": 0.1257,
+    "inlet_area": 0.03274924987400797,
+    "rotation": 0,
+    "n_in": 2,
+    "a": 1,
+    "b": 1,
+    "c": 0,
+    "x_coords": [
+      0,
+      0.395,
+      0.585,
+      1
+    ],
+    "y_coords": [
+      1,
+      0.693,
+      0.34,
+      0
+    ],
+    "z_coords": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "s_curvature_start": 0.6,
+    "s_curvature_end": 0.9,
+    "s_diffusion_start": 0.6,
+    "s_diffusion_end": 0.9,
+    "s_morph_start": 0,
+    "s_morph_end": 1,
+    "use_area_distribution": false,
+    "use_middle_plane": false
+  }
+}
