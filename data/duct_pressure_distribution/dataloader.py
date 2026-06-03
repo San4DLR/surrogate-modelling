@@ -12,10 +12,12 @@ def getInpsAndOuts(ROOT_DATA_PATH):
     ROOT_DATA_PATH = str(ROOT_DATA_PATH)
 
     for sample in samples:
-        with open(ROOT_DATA_PATH + "\\" + sample + "_geometry_inputs.json") as f:
+        input_file_name = f"{sample}_geometry_inputs"
+        with open(ROOT_DATA_PATH / input_file_name) as f:
             all_inps += [json.load(f)]
         
-        all_outs += [np.load(ROOT_DATA_PATH + "\\" + sample + "_pressure.npy")]
+        output_file_name = f"{sample}_pressure.py"
+        all_outs += [np.load(ROOT_DATA_PATH / output_file_name)]
 
     all_outs = np.array(all_outs)
 
